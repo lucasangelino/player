@@ -1,0 +1,9 @@
+@import './buttons.css';
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blueviolet;
+}
+video {
+    border-radius: 15px;
+}
