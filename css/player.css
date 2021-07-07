@@ -26,6 +26,7 @@ body {
   position: absolute;
   inset-block-start: 0;
   inset-inline-start: 20px;
+  font-weight: lighter;
 }
 
 .player-actions {
@@ -40,6 +41,7 @@ body {
 
 .player-progress {
   position: absolute;
+  color: white;
   inset-block-end: 0;
   inset-inline: 0;
   display: flex;
@@ -48,6 +50,7 @@ body {
 
 .player-progress input {
   flex: 1;
+  height: 5px;
 }
 
 .player-overlay {
