@@ -23,9 +23,9 @@ function handlePause() {
 }
 
 function handleBackward() {
-  $video.currentTime = $video.currentTime - BACKWARD_SECONDS;
+  $video.currentTime -= BACKWARD_SECONDS;
 }
 
 function handleForward() {
-  $video.currentTime = $video.currentTime + FORWARD_SECONDS;
+  $video.currentTime += FORWARD_SECONDS;
 }
