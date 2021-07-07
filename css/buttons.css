@@ -1,22 +1,23 @@
 .button {
-    border: 0;
-    block-size: 32px;
-    inline-size: 32px;
-    border-radius: 5px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-};
+  border: 0;
+  block-size: 20px;
+  inline-size: 20px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 
 #play {
-    background-image: url('./') ;
+  background-image: url("https://img.icons8.com/ios-filled/50/ffffff/play--v1.png");
 }
 #pause {
-    background-image: url('./') ;
-}
-#backward {
-    background-image: url('./') ;
+  background-image: url("https://img.icons8.com/ios-glyphs/30/ffffff/pause--v1.png");
 }
 #forward {
-    background-image: url('./') ;
+  background-image: url("https://img.icons8.com/material-outlined/48/ffffff/rotate-right.png");
+}
+#backward {
+  background-image: url("https://img.icons8.com/material-outlined/48/ffffff/rotate-right.png");
+  transform: rotateY(180deg);
 }

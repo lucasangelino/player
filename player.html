@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/player.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/player.css" />
     <title>Player</title>
-</head>
-<body>
-    <button class="button" id="play">
-        >
-    </button>
-    <button class="button" id="pause">
-        ii
-    </button>
-    <button class="button" id="backward">
-        <--
-    </button>
-    <button class="button" id="foward">
-        -->
-    </button>
-    <video
-        id='player'
-        src="./assets/video/sample.mp4"
-        width="600"
-        controls
-        poster="./assets/img/play-thum.jpg"
-    ></video>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="player">
+        <button
+          class="button"
+          id="backward"
+          aria-label="go back 10 seconds"
+          title="go back 10 seconds"
+        ></button>
+        <button
+          class="button"
+          id="play"
+          aria-label="play video"
+          title="play video"
+        ></button>
+        <button
+          class="button"
+          id="pause"
+          hidden
+          aria-label="pause video"
+          title="pause video"
+        ></button>
+        <button
+          class="button"
+          id="forward"
+          aria-label="go forward 10 seconds"
+          title="go forward 10 seconds"
+        ></button>
+        <video
+          id="player"
+          src="./assets/video/sample.mp4"
+          width="600"
+          controls
+          poster="./assets/img/play-thum.jpg"
+        ></video>
+      </div>
+    </div>
 
-    <script>
-        const $video = document.querySelector('#player');
-        const $play = document.querySelector('#play');
-        const $pause = document.querySelector('#pause');
-
-        $play.addEventListener('click', handlePlay);
-        $pause.addEventListener('click', handlePause);
-
-
-        function handlePlay() {
-            $video.play();
-        };
-        function handlePause() {
-            $video.pause();
-        };
-        
-    </script>
-</body>
+    <script src="./js/index.js"></script>
+  </body>
 </html>
