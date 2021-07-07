@@ -10,6 +10,12 @@
   <body>
     <div class="wrapper">
       <div class="player">
+        <video
+          id="player"
+          src="./assets/video/sample.mp4"
+          width="600"
+          poster="./assets/img/play-thum.jpg"
+        ></video>
         <h2 class="player-title">Pink Floyd - High Hopes</h2>
         <div class="player-actions">
           <button
@@ -38,12 +44,9 @@
             title="go forward 10 seconds"
           ></button>
         </div>
-        <video
-          id="player"
-          src="./assets/video/sample.mp4"
-          width="600"
-          poster="./assets/img/play-thum.jpg"
-        ></video>
+        <div class="player-progress">
+          <input type="range" />
+        </div>
       </div>
     </div>
 
